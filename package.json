@@ -1,0 +1,15 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify-lambda serve . -t 50000",
+    "build": "netlify-lambda build ."
+  },
+  "author": "Adeeb Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "netlify-lambda": "^2.0.10"
+  }
+}
