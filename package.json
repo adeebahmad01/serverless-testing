@@ -10,6 +10,8 @@
   "author": "Adeeb Ahmad",
   "license": "ISC",
   "dependencies": {
-    "netlify-lambda": "^2.0.10"
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.10",
+    "serverless": "^2.50.0"
   }
 }
