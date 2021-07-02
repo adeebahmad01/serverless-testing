@@ -5,14 +5,14 @@ const serverless = require("serverless-http");
 const app = express();
 const router = express.Router();
 
-// app.use(express.static("build"));
+router.use(express.static("build"));
+app.use(express.static("build"));
 
-// app.get("/", function (req, res) {
-//   res.sendFile(__dirname + "/build/index.html");
-// });
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/build/index.html");
+});
 
 router.get("/", (req, res) => {
-  router.use(express.static("build"));
   res.sendFile(__dirname + "/build/index.html");
 });
 router.get("/another", (req, res) => res.json({ route: req.originalUrl }));
